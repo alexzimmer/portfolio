@@ -7,7 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="navbar navbar-fixed-top">
+	<div id="cssmenu">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "urban planning {City Stories} film festival", root_path, id: "logo" %>
+       </div>
+      <div id="reveal">
+      <nav>
+        <ul class="nav navbar-nav pull-right">
+			
+			<a href="/" class="dropdown" id="nav-text">
+			<span data-title="Home">Home</span>
+			</a>
+			<a href="/about" class="dropdown" id="nav-text">
+			<span data-title="About">About</span>
+			</a>
+			<a href="/team" class="dropdown" id="nav-text">
+			<span data-title="Team">Team</span>
+			</a>
+			<a href="/schedule" class="dropdown" id="nav-text">
+			<span data-title="Schedule">Schedule</span>
+			</a>
+        </ul>
+      </nav>
+   </div>
+   </div>
+  </div>
+</div>
 <%= yield %>
 
 </body>
